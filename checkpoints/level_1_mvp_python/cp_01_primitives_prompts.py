@@ -39,8 +39,8 @@ def estimate_tokens(text: str) -> int:
     char_per_token = 4
     if text == "":
         return 0
-    
-    raise NotImplementedError('Implement Exercise 01.02: estimate_tokens')
+    return math.ceil(len(text) / 4)
+    # raise NotImplementedError('Implement Exercise 01.02: estimate_tokens')
 
 
 # Exercise 01.03: clean_generation
